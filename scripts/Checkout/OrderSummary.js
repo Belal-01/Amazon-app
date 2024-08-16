@@ -149,6 +149,7 @@ document.querySelectorAll('.save-quantity-link').forEach((button)=>{
 
    renderOrderSummary(); 
    renderCheckoutHeader();
+   renderpaymentSummary();
    
    
    
