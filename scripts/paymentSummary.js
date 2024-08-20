@@ -1,7 +1,7 @@
-import { calculateTheQuantity, cart } from "../../data/cart.js";
-import { getProduct } from "../../data/products.js";
-import { getDeliveryOption } from "../../data/deliveryObtions.js";
-import { formatCurrancy } from "../Utils/money.js";
+import { calculateTheQuantity, cart } from "../data/cart.js";
+import { getProduct } from "../data/products.js";
+import { getDeliveryOption } from "../data/deliveryObtions.js";
+import { formatCurrancy } from "./Utils/money.js";
 
 export function renderpaymentSummary(){
   let productPriceCents = 0 ;

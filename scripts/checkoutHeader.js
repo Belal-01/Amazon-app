@@ -1,4 +1,4 @@
-import { calculateTheQuantity } from "../../data/cart.js";
+import { calculateTheQuantity } from "../data/cart.js";
 
 export function renderCheckoutHeader(){
   console.log('inside the header')
