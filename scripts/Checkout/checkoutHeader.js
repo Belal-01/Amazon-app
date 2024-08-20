@@ -1,7 +1,7 @@
 import { calculateTheQuantity } from "../../data/cart.js";
 
-
 export function renderCheckoutHeader(){
+  console.log('inside the header')
   let quantity = calculateTheQuantity()||'';
   let headerHtml = ` 
     <div class="header-content">
