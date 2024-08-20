@@ -1,15 +1,14 @@
 
 import {cart,removeFromCart,calculateTheQuantity,updatQuantity,updatDeliveryOption} from "../data/cart.js"
 import { products,getProduct } from "../data/products.js";
-
 import { deliveryOptions ,getDeliveryOption,calculateDeliveryDate} from "../data/deliveryObtions.js";
 import { formatCurrancy } from "./Utils/money.js";
 import { renderpaymentSummary } from "./paymentSummary.js";
-import { renderCheckoutHeader } from "./CheckoutHeader.js";
+import { renderCheckoutHeader } from "./checkoutHeader.js";
 
 
 function renderCheckOutItems(){
-let cartSummaryHtml;
+let cartSummaryHtml ='';
 
 cart.forEach((cartItem)=>{ 
   const productId = cartItem.productId;
