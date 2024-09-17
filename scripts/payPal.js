@@ -1,7 +1,7 @@
 import { cart } from "../data/cart.js";
 import { getProduct } from "../data/products.js";
 import { getDeliveryOption } from "../data/deliveryObtions.js";
-alert ('hello')
+
 let productPriceCents = 0 ;
 let shippingPriceCents =0 ;
 cart.forEach((cartItem) => {
