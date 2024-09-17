@@ -18,7 +18,7 @@ cart.forEach((cartItem) => {
  const totalCents = totalBeforeTaxCents + taxCents;
  
  showPaymentCard()
-  
+  console.log(formatCurrancy(totalCents))
    function showPaymentCard(){
    paypal.Buttons({
      createOrder:(data,actions,err)=>{
