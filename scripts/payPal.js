@@ -1,6 +1,7 @@
 import { cart } from "../data/cart.js";
 import { getProduct } from "../data/products.js";
 import { getDeliveryOption } from "../data/deliveryObtions.js";
+import { formatCurrancy } from "./Utils/money";
 
 let productPriceCents = 0 ;
 let shippingPriceCents =0 ;
@@ -28,7 +29,7 @@ cart.forEach((cartItem) => {
              description:"Cool looking table",
              amount:{
                currency_code:"USD",
-               value:(totalCents/100)
+               value:formatCurrancy(totalCents)
              }
            }
          ]
