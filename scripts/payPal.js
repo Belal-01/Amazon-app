@@ -1,7 +1,7 @@
 import { cart } from "../data/cart.js";
 import { getProduct } from "../data/products.js";
 import { getDeliveryOption } from "../data/deliveryObtions.js";
-import { formatCurrancy } from "./Utils/money";
+import { formatCurrancy } from "./Utils/money.js";
 
 let productPriceCents = 0 ;
 let shippingPriceCents =0 ;
