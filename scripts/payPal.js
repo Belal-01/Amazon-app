@@ -28,7 +28,7 @@ cart.forEach((cartItem) => {
              description:"Cool looking table",
              amount:{
                currency_code:"USD",
-               value:totalCents
+               value:(totalCents/100)
              }
            }
          ]
