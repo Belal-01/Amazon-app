@@ -55,11 +55,21 @@ const paymentSummaryHtml = `
       $${formatCurrancy(totalCents)}</div>
       </div>
 
-      <button class="place-order-button button-primary">
-      Place your order
-      </button>`;
+     <a href="./payPal.html">
+      <button class="place-order-button button-primary" id="payment-btn">
+         Place your order
+        </button>
+      </a>`;
+const paymentSummary = document.querySelector('.js-payment-summary')
+   paymentSummary.innerHTML = paymentSummaryHtml;
 
-    document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHtml;
+  
 
+ 
 }
+ 
+
+    
+
+
 //renderpaymentSummary();
