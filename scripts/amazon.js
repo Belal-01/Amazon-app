@@ -3,6 +3,21 @@ import { products } from '../data/products.js';
 import { formatCurrancy } from './Utils/money.js';
 import { calculateTheQuantity } from '../data/cart.js';
 
+
+/// search bar 
+ let fillterdProducts = products;
+document.querySelector('.search-button').addEventListener('click',()=>{
+  const searchText = document.querySelector('.search-bar').value;
+  console.log(searchText)
+ fillterdProducts = products.filter(product=>product.name.toLowerCase().includes(searchText.toLowerCase()))
+  
+  renderAmasonMainPage(fillterdProducts);
+})
+
+
+
+const renderAmasonMainPage = (products)=>{
+
 let productsHtml = '';
 products.forEach((product)=>{
     productsHtml+=`
@@ -59,6 +74,12 @@ products.forEach((product)=>{
 });
 
 document.querySelector(".js-products-grid").innerHTML=productsHtml;
+
+}
+
+renderAmasonMainPage(products);
+
+
 
 updatTheCartQuantity();
 
